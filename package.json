@@ -1,0 +1,21 @@
+{
+  "name": "ongdre",
+  "version": "1.0.0",
+  "description": "funky visual novel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PWA",
+    "SPA",
+    "JS"
+  ],
+  "author": "Sounalet Alexandre",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}

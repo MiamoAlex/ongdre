@@ -1,0 +1,249 @@
+{
+    "godAppearance": [
+        { 
+            "character": "ongdre",
+            "dialog": "olala qu'est ce que c'est que ça encore, j'étais venu pour rencontrer mon ame soeur moi... je n'aime pas ça moi",
+            "visuals": [
+                "church",
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "god1",
+            "speed": 50
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "bonjour ongdre, je suis le tout puissant bb dieu",
+            "visuals": [
+                "angel"
+            ],
+            "clear": false,
+            "audio": "god2",
+            "speed": 65
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "non. malheuresement, tu te trompes, tu es ici, pour recevoir la bénédiction de la miiiiiiiiible",
+            "audio": "god3",
+            "speed": 75
+        },
+        {
+            "character": "ongdre",
+            "dialog": "je m'en moque de la mible, je veux être chirurgien moi",
+            "audio": "god4",
+            "speed": 65
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "génératrice de burgers et source de nutrition de tout le peuple, son pouvoir est infini et façonne notre univers depuis la nuit des temps, tu ne peux t'y opposer ongdre",
+            "audio": "god5",
+            "speed": 55
+        },
+        {
+            "character": "ongdre",
+            "dialog": "nonnn laissez moi, j'en ai marre de votre émission!!!",
+            "audio": "god6",
+            "speed": 45
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "allez.. ongdre.. joue le jeu joue le jeu on te regarde là !!!",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "god7",
+            "speed": 45
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "ongdre, en la mible, tu trouveras ta raison d'être, tu ne feras plus qu'un avec les burgers, et les burgers ne feront plus qu'un avec toi. laisse toi bénir par sa croustillante aura !!",
+            "visuals": [
+                "angel"
+            ],
+            "clear": true,
+            "audio": "god8",
+            "speed": 55
+        },
+        {
+            "choices": [
+                {
+                    "conversation": "godJoin",
+                    "dialog": "recevoir la bénédiction"
+                },
+                {
+                    "conversation": "godGnomes",
+                    "dialog": "invoquer mon voisin et sa confrérie"
+                },
+                {
+                    "conversation": "godFight",
+                    "dialog": "𝖆𝖋𝖋𝖗𝖔𝖓𝖙𝖊𝖗 𝖇𝖇 𝖉𝖎𝖊𝖚"
+                }
+            ]
+        }
+    ],
+    "godJoin": [
+        {
+            "character": "bb dieu",
+            "dialog": "excel anchois, ressens tu la puissance de ses ingrédients magiques ??",
+            "visuals": [
+                "angel"
+            ],
+            "clear": true,
+            "audio": "godJoin1",
+            "speed": 45,
+            "trigger": "ongdreBurger"
+        },
+        {
+            "character": "ongdre",
+            "dialog": "aaaaaaaaa",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "godJoin2",
+            "speed": 45
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "un avec la mible, en voilà un retournement de situation, parfait moment pour t'emmener voir ton père, qui doit être si fier de toi !!!",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "godJoin3",
+            "speed": 45
+        },
+        {
+            "character": "ongdre",
+            "dialog": "mon... mon quoi????",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "godJoin4",
+            "speed": 45
+        },
+        {
+            "trigger": "dayTwoFail"
+        }
+    ],
+
+
+    "godGnomes": [
+        {
+            "character": "ongdre",
+            "dialog": "ehhh les gnomes, ramenez vous, j'ai besoin de partir d'ici",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "godGnomes1",
+            "speed": 45
+        },
+        {
+            "character": "une armée de gnomes",
+            "dialog": "ohhh oui la mible ! la mible !",
+            "visuals": [
+                "gnomes"
+            ],
+            "clear": true,
+            "audio": "godGnomes2",
+            "speed": 45
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "brillante idée ongdre ! ces gnomes vont distraire bb dieu un bon moment je pense, allons rendre visite à ton père maintenant",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "godGnomes3",
+            "speed": 45
+        },
+        {
+            "trigger": "dayTwoSuccess"
+        }
+    ],
+
+    "godFight": [
+        {
+            "character": "ongdre",
+            "dialog": "non. hors de question de rejoindre la mible, je n'ai pas besoin d'elle pour être moi même ! rentre chez toi bb dieu, ou affronte moi !",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "godFight1",
+            "speed": 45
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "olalalala ça commence à chauffer les ptits mionches !",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "godFight2",
+            "speed": 45
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "'Consomme le cheese, ou laisse le te consommer', ainsi furent les paroles de rataflure, tu souhaites t'y opposer ? alors viens",
+            "visuals": [
+                "angel"
+            ],
+            "clear": true,
+            "audio": "godFight3",
+            "speed": 65
+        },
+        {
+            "character": "ongdre",
+            "dialog": "regarde bb dieu j'ai fait un super burger ce matin",
+            "visuals": [
+                "burntburger"
+            ],
+            "clear": true,
+            "audio": "godFight4",
+            "speed": 45
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "visuals": [
+                "angel"
+            ],
+            "clear": true,
+            "audio": "godFight5",
+            "speed": 90
+        },
+        {
+            "character": "ongdre",
+            "dialog": "oh bah non t'es parti où",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "godFight6",
+            "speed": 45
+        },
+        {
+            "character": "bb dieu",
+            "dialog": "non mais j'ai déco ! tu sais c'que ça veut dire déco??",
+            "visuals": [
+                "angel"
+            ],
+            "audio": "godFight7",
+            "speed": 45
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "imprésionnannnntt, dieu s'est déconnecté du serveur devant ton burger cramé ongdre !! quelle belle prise de concience, oh mais attends j'ai un coup de fil de ton père, allons le voir !",
+            "visuals": [
+                "announcer"
+            ],
+            "clear": true,
+            "audio": "godFight8",
+            "speed": 45
+        },
+        {
+            "trigger": "dayTwoSuccess"
+        }
+    ]
+}

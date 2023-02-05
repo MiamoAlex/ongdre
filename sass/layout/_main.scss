@@ -1,0 +1,141 @@
+@use "../abstracts/" as *;
+
+.main {
+    width: 90vw;
+    height: 90vh;
+    max-width: 1470px;
+    max-height: 950px;
+    position: relative;
+    overflow: hidden;
+
+    &__opened {
+        transition: transform 3000ms;
+        &::before {
+            transform: translateY(-60rem);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: transform 7000ms;
+        background: url("/assets/tex/curtain.png");
+        background-size: contain;
+        image-rendering: pixelated;
+    }
+
+    &__menu {
+        position: absolute;
+        inset: 0;
+        color: var(--clr-main-white);
+        margin: auto;
+        z-index: 5;
+        @include flex(center, center, column);
+
+        &-title {
+            font-size: 4rem;
+        }
+
+        &-credits {
+            color: #fff;
+            &:visited {
+                color: inherit;
+            }
+        }
+
+        &-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        &-start, &-load  {
+            color: #222;
+            margin-bottom: 1rem;
+            font-size: 25px;
+            width: 30%;
+            background: #4380f0;
+            text-transform: uppercase;
+
+            &:hover {
+                filter: brightness(.7);
+            }
+        }
+    }
+
+    &__dialog {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        padding: 0.5rem;
+        margin: auto;
+        font-size: 28px;
+        pointer-events: none;
+        transition: opacity 300ms;
+        background-color: var(--clr-main-black);
+    }
+
+    &__settings {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 3rem;
+        z-index: 50;
+        image-rendering: pixelated;
+    }
+
+    &__theater {
+        display: grid;
+        place-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        transition: filter 300ms;
+        background-color: var(--clr-main-theater);
+
+        & > * {
+            image-rendering: pixelated;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 14%;
+            z-index: 50;
+            image-rendering: pixelated;
+        }
+
+        &::after {
+            background: url("/assets/tex/curtainright.png");
+            background-size: 100% 100%;
+            right: 0;
+        }
+
+        &::before {
+            background: url("/assets/tex/curtainleft.png");
+            background-size: 100% 100%;
+            left: 0;
+        }
+    }
+
+    &__newyork {
+        width: 80vw;
+        animation: opacityscale forwards 6s;
+    }
+}
+
+@include mq(medium) {
+    .main {
+        width: 80vw;
+        height: 80vh;
+    }
+}

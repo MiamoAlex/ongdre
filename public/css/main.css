@@ -1,0 +1,658 @@
+@font-face {
+  font-family: "Free Pixel";
+  src: url("/assets/FreePixel-Regular.woff2") format("woff2"), url("/assets/FreePixel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-w-light: 300;
+  --font-w-regular: 400;
+  --font-w-bold: 700;
+  --fs-500: 1.375rem;
+  --fs-600: 2rem;
+  --fs-800: 2.9375rem;
+  scroll-behavior: smooth;
+}
+@media (min-width: 100em) {
+  :root {
+    --fs-500: 1.875rem;
+    --fs-600: 2.3125rem;
+    --fs-800: 3.625rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html,
+body {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-main-black);
+  color: var(--clr-main-white);
+  user-select: none;
+  font-family: "Free Pixel";
+  cursor: url("/assets/tex/cur.png"), default;
+}
+
+input {
+  cursor: url("/assets/tex/hover.png"), default;
+}
+
+a {
+  cursor: url("/assets/tex/hover.png"), default;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+use {
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+@keyframes opacityscale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slidebottom {
+  0% {
+    transform: translateY(40rem) rotate(30deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes slidetop {
+  0% {
+    transform: translateY(-80rem) rotate(-200deg) scaleX(-1);
+  }
+  100% {
+    transform: translateY(-25rem) rotate(-180deg) scaleX(-1);
+  }
+}
+@keyframes uglyzoom {
+  0% {
+    transform: scale(0) rotateY(0deg);
+  }
+  100% {
+    transform: scale(1) rotateY(720deg);
+  }
+}
+@keyframes zipzap {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes god {
+  0% {
+    transform: translateY(-50rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.theme__main {
+  --clr-name-main: ;
+  --clr-main-white: #f3f3f3;
+  --clr-main-black: #0c0c13;
+  --clr-main-theater: #0f101a;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gagoug {
+  text-align: center;
+}
+
+.hover {
+  cursor: url("../assets/tex/hover.png"), default;
+}
+
+.choice {
+  background-color: var(--clr-main-black);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: solid #333;
+}
+.choice:hover {
+  filter: brightness(0.5);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  font-size: 1.25rem;
+  width: calc(100vw - 0.5rem);
+  padding: 0.5rem;
+  z-index: 10;
+}
+.header__sound {
+  accent-color: rgb(32, 32, 32);
+}
+.header__reset {
+  opacity: 0;
+  font-size: 0.8rem;
+  transition: opacity 300ms;
+}
+.header:hover .header__reset {
+  opacity: 1;
+}
+
+.main {
+  width: 90vw;
+  height: 90vh;
+  max-width: 1470px;
+  max-height: 950px;
+  position: relative;
+  overflow: hidden;
+}
+.main__opened {
+  transition: transform 3000ms;
+}
+.main__opened::before {
+  transform: translateY(-60rem);
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 7000ms;
+  background: url("/assets/tex/curtain.png");
+  background-size: contain;
+  image-rendering: pixelated;
+}
+.main__menu {
+  position: absolute;
+  inset: 0;
+  color: var(--clr-main-white);
+  margin: auto;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__menu-title {
+  font-size: 4rem;
+}
+.main__menu-credits {
+  color: #fff;
+}
+.main__menu-credits:visited {
+  color: inherit;
+}
+.main__menu-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.main__menu-start, .main__menu-load {
+  color: #222;
+  margin-bottom: 1rem;
+  font-size: 25px;
+  width: 30%;
+  background: #4380f0;
+  text-transform: uppercase;
+}
+.main__menu-start:hover, .main__menu-load:hover {
+  filter: brightness(0.7);
+}
+.main__dialog {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 28px;
+  pointer-events: none;
+  transition: opacity 300ms;
+  background-color: var(--clr-main-black);
+}
+.main__settings {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 50;
+  image-rendering: pixelated;
+}
+.main__theater {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: filter 300ms;
+  background-color: var(--clr-main-theater);
+}
+.main__theater > * {
+  image-rendering: pixelated;
+}
+.main__theater::after, .main__theater::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 14%;
+  z-index: 50;
+  image-rendering: pixelated;
+}
+.main__theater::after {
+  background: url("/assets/tex/curtainright.png");
+  background-size: 100% 100%;
+  right: 0;
+}
+.main__theater::before {
+  background: url("/assets/tex/curtainleft.png");
+  background-size: 100% 100%;
+  left: 0;
+}
+.main__newyork {
+  width: 80vw;
+  animation: opacityscale forwards 6s;
+}
+
+@media (min-width: 60em) {
+  .main {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+.mobileprompt {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+.mobileprompt__install {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .mobileprompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    z-index: 100;
+    background-color: var(--clr-main-black);
+  }
+}
+@media screen and (orientation: landscape) {
+  .mobileprompt {
+    display: none;
+  }
+}
+.intro__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+.intro__herbertstory {
+  animation: opacityscale forwards 2s;
+  width: 70vw;
+}
+.intro__restaurant {
+  animation: uglyzoom forwards 4s;
+  width: 70vw;
+}
+
+.introSleep__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidetop forwards 2s;
+}
+
+.introAgree__announcer {
+  position: absolute;
+  width: 35vw;
+  right: 12%;
+  bottom: 5rem;
+}
+.introAgree__ongdre {
+  z-index: 10;
+}
+.introAgree__cassandra {
+  width: 70vw;
+  animation: opacityscale 700ms forwards;
+}
+
+.introEnd__announcer {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+  z-index: -1;
+}
+
+.mageAppearance__ongdre, .mageAppearance__ongdreMini, .mageAppearance__ongdreCrown, .mageAppearance__ongdreHat {
+  position: absolute;
+  left: 10%;
+  width: 15%;
+  bottom: 0;
+}
+.mageAppearance__miamagic {
+  position: absolute;
+  width: 80vw;
+  inset: 0;
+  margin: auto;
+}
+.mageAppearance__mage {
+  position: absolute;
+  width: 15vw;
+  right: 10%;
+  bottom: 18%;
+  animation: zipzap forwards 1s;
+}
+
+.godAppearance__church {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 75vw;
+}
+.godAppearance__ongdre, .godAppearance__ongdreMini, .godAppearance__ongdreCrown, .godAppearance__ongdreHat {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 15%;
+  bottom: 0;
+}
+.godAppearance__angel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7vw;
+  animation: god forwards 1.5s;
+}
+.godAppearance__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+
+.godJoin__announcer, .godGnomes__announcer, .godFight__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+
+[data-conversation=godFight] {
+  opacity: 0.05;
+}
+
+.mageInsult__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+
+.mageRap__announcer, .mageCook__announcer, .mageDeflect__announcer, .mageMario__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+
+.mageCook__ongdre, .mageCook__ongdreMini, .mageCook__ongdreCrown, .mageCook__ongdreHat {
+  position: absolute;
+  left: 33%;
+  width: 20%;
+  bottom: 3rem;
+}
+.mageCook__ongdreCook {
+  width: 70vw;
+}
+
+.dadAppearance__ongdre, .dadAppearance__ongdreMini, .dadAppearance__ongdreCrown, .dadAppearance__ongdreHat, .dadAppearance__ongdreBurger {
+  position: absolute;
+  left: 10%;
+  margin: auto;
+  width: 15%;
+  bottom: 5%;
+}
+.dadAppearance__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  margin: auto;
+  width: 35vw;
+  animation: slidebottom forwards 2s;
+}
+.dadAppearance__daron {
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+  width: 20vw;
+}
+.dadAppearance__room {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 85vw;
+}
+.dadAppearance__monsieurbete {
+  width: 30vw;
+  animation: opacityscale forwards 2s;
+}
+
+.dadConfront__announcer, .dadOpen__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+
+.epilogueBad__announcer,
+.epilogueGood__announcer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  animation: slidebottom forwards 2s;
+}
+.epilogueBad__cassandra,
+.epilogueGood__cassandra {
+  width: 70vw;
+  animation: opacityscale 700ms forwards;
+}
+.epilogueBad__newyork,
+.epilogueGood__newyork {
+  width: 80vw;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+.epilogueBad__mage,
+.epilogueGood__mage {
+  position: absolute;
+  right: 8%;
+  margin: auto;
+  width: 22%;
+  bottom: 12%;
+  animation: zipzap forwards 1s;
+  transform-origin: bottom;
+}
+.epilogueBad__eglantine,
+.epilogueGood__eglantine {
+  position: absolute;
+  left: 5%;
+  margin: auto;
+  width: 23%;
+  bottom: 6%;
+}
+.epilogueBad__narrator,
+.epilogueGood__narrator {
+  position: absolute;
+  left: 14%;
+  margin: auto;
+  width: 16%;
+  bottom: 33%;
+  animation: opacityscale 2s forwards;
+}
+.epilogueBad__pomelos,
+.epilogueGood__pomelos {
+  animation: opacityscale 2s forwards;
+}
+.epilogueBad__nerd,
+.epilogueGood__nerd {
+  position: absolute;
+  left: 18%;
+  margin: auto;
+  width: 16%;
+  bottom: 69%;
+  animation: zipzap 2s forwards;
+}
+.epilogueBad__nimbuffle,
+.epilogueGood__nimbuffle {
+  position: absolute;
+  top: -41px;
+  transform: rotate(-180deg);
+  left: 13rem;
+  right: 0;
+  margin: auto;
+  width: 10%;
+}
+.epilogueBad__ongdre, .epilogueBad__ongdreMini, .epilogueBad__ongdreCrown, .epilogueBad__ongdreHat, .epilogueBad__ongdreBurger, .epilogueBad__ongdreExplosion,
+.epilogueGood__ongdre,
+.epilogueGood__ongdreMini,
+.epilogueGood__ongdreCrown,
+.epilogueGood__ongdreHat,
+.epilogueGood__ongdreBurger,
+.epilogueGood__ongdreExplosion {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 12%;
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */

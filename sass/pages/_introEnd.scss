@@ -1,0 +1,11 @@
+.introEnd {
+    &__announcer {
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+        margin: auto;
+        width: 30vw;
+        animation: slidebottom forwards 2s;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,174 @@
+{
+    "intro": [
+        {
+            "character": "???",
+            "dialog": "Et salut à tous mes ptits mionches c'est Miorlax, aujourd'hui on se retrouve pour une nouvelle edition de LUUUULLLI LOOOOVE !!! La seule emission ici en ville où vous pourrez trouver l'amour!!!",
+            "visuals": [
+                "announcer"
+            ],
+            "clear": false,
+            "audio": "intro1",
+            "speed": 41
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "La semaine derniere, on retrouvait herbert, qui après 6 mois de célibat, a enfin rencontré son âme soeur nimbuffle l'éléphant. Leur relation à été compliquée au début mais heuresement... ",
+            "clear": true,
+            "visuals": [
+                "herbertstory"
+            ],
+            "audio": "intro2",
+            "speed": 40
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "Après un ptit date au restaurant miamo autour d'un bon burger, tout est rentré dans l'ordre ! et encore une victoire pour LULI LOVE!!!",
+            "clear": true,
+            "visuals": [
+                "restaurant"
+            ],
+            "audio": "intro3",
+            "speed": 25
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "Dans l'émission d'aujourd'hui, on vous a préparé du très très lourd mes ptits mionches, qui dit nouvelle émission, dit nouveau candidat ! Faites moi un tonnerre d'applaudissements pourrrrr ONGDRE !!!!",
+            "clear": false,
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "intro4",
+            "speed": 35
+        },
+        {
+            "character": "ongdre ?",
+            "dialog": "................ ehhh, salut tout le monde",
+            "clear": true,
+            "visuals": [
+                "ongdre"
+            ],
+            "audio": "intro5",
+            "speed": 90,
+            "trigger": "stopMusic"
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "Olala effectivement y'a du travail les amis j'ai pas raison ?",
+            "clear": false,
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "intro6",
+            "speed": 27,
+            "trigger": "resumeTvShow"
+        },
+        {
+            "choices": [
+                {
+                    "dialog": "oui tu as raison miorlax il est horrible",
+                    "conversation": "introAgree"
+                },
+                {
+                    "dialog": "zzzzzzzzzzzz. oups je me suis endormir",
+                    "conversation": "introSleep"
+                }
+            ]
+        }
+    ],
+    "introSleep": [
+        {
+            "character": "Miorlax",
+            "dialog": "bah.... tout le monde s'est endormi ????? ah bon ok...",
+            "clear": true,
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "introSleep",
+            "speed": 90,
+            "trigger": "stopMusic"
+        },
+        {
+            "trigger": "credits"
+        }
+    ],
+    "introAgree": [
+        {
+            "character": "Miorlax",
+            "dialog": "hahahha mais oui on est d'accord, il est horrible, mais ne t'inquietes pas mon ptit ongre, on est là pour te relooker. Cassandra !! Dis nous en plus sur ongdre !!",
+            "clear": true,
+            "visuals": [
+                "ongdre",
+                "announcer"
+            ],
+            "audio": "intro7",
+            "speed": 35
+        },
+        {
+            "character": "Cassandra",
+            "dialog": "ongdre est un oeuf humanoide tout droit sorti de la forêt perdue, il rêve de devenir chirurgien, mais personne de l'aime, quelle dommage ongdre, on va pleurer.",
+            "clear": true,
+            "visuals": [
+                "cassandra"
+            ],
+            "audio": "intro8",
+            "speed": 35
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "bien envoyé cassandra !!! mais alors dites nous chers telespectateurs, comment allons nous relooker cet horrible ongdre ?",
+            "clear": true,
+            "visuals": [
+                "announcer",
+                "ongdre"
+            ],
+            "audio": "intro9",
+            "speed": 35
+        },
+        {
+            "choices": [
+                {
+                    "dialog": "lui donner un chapeau",
+                    "event": "hatSkin"
+                },
+                {
+                    "dialog": "le rendre tout petit tout minuscule",
+                    "event": "miniSkin"
+                },
+                {
+                    "dialog": "couronne parce que c'est le roi ongdre",
+                    "event": "crownSkin"
+                },
+                {
+                    "dialog": "en vrai il est pas si mal comme ça je trouve perso",
+                    "event": "noSkin"
+                }
+            ]
+        }
+    ],
+    "introEnd": [
+        {
+            "character": "Miorlax",
+            "dialog": "Eh ben voilà notre ptit ongre il est tout beau tout propre. bon écoute moi bien, comme le veut la tradition, nous allons passer 3 jours ensemble dans lesquels tu seras ammené à rencontrer des personnes, avec lesquelles tu devras communiquer !!",
+            "clear": true,
+            "visuals": [
+                "protagonist",
+                "announcer"
+            ],
+            "audio": "intro10",
+            "speed": 50
+        },
+        {
+            "character": "ongdre",
+            "dialog": "ohhh, c'est super, on commence ?",
+            "clear": true,
+            "visuals": [
+                "protagonist"
+            ],
+            "audio": "intro11",
+            "speed": 65
+        },
+        {
+            "trigger": "chapter1"
+        }
+    ]
+}

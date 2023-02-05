@@ -1,0 +1,299 @@
+{
+    "mageAppearance": [
+        {
+            "character": "ongdre",
+            "dialog": "olala, c'est super beau on est où là ???!!",
+            "visuals": [
+                "miamagic",
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "mage0",
+            "speed": 60
+        },
+        {
+            "character": "??!!",
+            "dialog": "*zip zap zoxxxx ziunx paf* mouahahahahaha, bonsoir ongdre",
+            "visuals": [
+                "mage"
+            ],
+            "clear": false,
+            "audio": "mage1",
+            "speed": 40
+        },
+        {
+            "character": "??!!",
+            "dialog": "j'espere que tu te rappelles de moi, ongdre",
+            "clear": false,
+            "audio": "mage2",
+            "speed": 40
+        },
+        {
+            "character": "ongdre",
+            "dialog": "ehhhh, oh nonnn c'est toi balthazionx, ne me dis pas que tu es devenu professeur à poulebare",
+            "clear": false,
+            "audio": "mage3",
+            "speed": 65
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "mouahahahah et oui c'est moi balthazionx, et je suis devenu professeur à poulebare !!! alors que toi tu n'es toujours qu'un oeuf pourri",
+            "clear": false,
+            "audio": "mage4",
+            "speed": 65
+        },
+        {
+            "character": "ongdre",
+            "dialog": "*bruit d'oeuf qui respire*",
+            "clear": false,
+            "audio": "breathing",
+            "speed": 40,
+            "choices": [
+                {
+                    "conversation": "mageInsult",
+                    "dialog": "euh moi je suis peut être un oeuf pourri mais alors toi hein ok"
+                },
+                {
+                    "conversation": "mageSpell",
+                    "dialog": "abracadabra dans le vieux"
+                }
+            ]
+        }
+    ],
+    "mageInsult": [
+        {
+            "character": "ongdre",
+            "dialog": "euh moi je suis peut être un oeuf pourri mais euh toi.... hann...",
+            "clear": true,
+            "audio": "mageInsult",
+            "visuals": [
+                "protagonist"
+            ],
+            "speed": 80
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "tu es si ridicule ongdre, encore pire que dans mes souvenirs",
+            "clear": true,
+            "audio": "mageInsult1",
+            "visuals": [
+                "mage"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "on m'a dit que tu voulais faire chirurgien, si j'étais toi, j'irai plutot me faire cuire un oeuf !",
+            "audio": "mageInsult2",
+            "speed": 50
+        },
+        {
+            "character": "ongdre",
+            "dialog": "oh... c'est vraiment pas très gentil balthazionx",
+            "clear": true,
+            "audio": "mageInsult3",
+            "visuals": [
+                "protagonist"
+            ],
+            "speed": 80
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "oh mais enfin ça suffit ongdre on s'ennuit à mort là derriere la caméra, fais quelque chose, ne laisse pas ce vieux naze t'ammadouer, on veut de l'action nous",
+            "clear": false,
+            "audio": "mageInsult4",
+            "visuals": [
+                "announcer"
+            ],
+            "trigger": "showMusic",
+            "speed": 40
+        },
+        {
+            "character": "ongdre",
+            "dialog": "*vite, faut que je me sorte de ça*",
+            "clear": false,
+            "audio": "thinking",
+            "speed": 40,
+            "choices": [
+                {
+                    "conversation": "mageRap",
+                    "dialog": "faire un freestyle de rap"
+                },
+                {
+                    "conversation": "mageCook",
+                    "dialog": "aller se faire cuire un oeuf"
+                }
+            ]
+        }
+    ],
+    "mageSpell": [
+        {
+            "character": "ongdre",
+            "dialog": "euhhhh, abracadabra !!!",
+            "clear": true,
+            "audio": "mageSpell",
+            "visuals": [
+                "protagonist"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "arghhhh ongdre petit imbécile tu oses vraiment me défier ??? esquive ça si tu le peux !! WAAAAAAAA",
+            "clear": true,
+            "audio": "mageSpell1",
+            "visuals": [
+                "mage"
+            ],
+            "speed": 70
+        },
+        {
+            "choices": [
+                {
+                    "conversation": "mageDeflect",
+                    "dialog": "foncer la tête la première de toute façon je suis un oeuf"
+                },
+                {
+                    "conversation": "mageMario",
+                    "dialog": "appel de secours à mario"
+                }
+            ]
+        }
+    ],
+    "mageMario": [
+        {
+            "character": "mario",
+            "dialog": "*meep meep* HELLOOOO ALORS ON M'A APPELÉ AU SECOURS, HOLA BALTHAZIONX TOUCHE PAS A ONGDRE YIHEE",
+            "clear": true,
+            "audio": "mageLuigi1",
+            "visuals": [
+                "mario"
+            ],
+            "speed": 60
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "arghhhh manquez plus que lui, tu as de la chance pour cette fois, mais je reviendrais m'occuper de toi ongdre, compte sur moi !",
+            "clear": true,
+            "audio": "mageLuigi2",
+            "visuals": [
+                "mage"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "HAHAHHAAH GRANDIOOSEEE ! C'est dans la boite ! Félicitations Ongdre, tu as prouvé à ton viel ami de quel bois tu te chauffais mon grand. Allez, au prochain tournage !",
+            "clear": false,
+            "audio": "mageLuigi3",
+            "visuals": [
+                "announcer"
+            ],
+            "speed": 30
+        },
+        {
+            "trigger": "dayOneSuccess"
+        }
+    ],
+    "mageDeflect": [
+        {
+            "character": "ongdre",
+            "dialog": "OWWWWW, ça fait super mallll",
+            "clear": true,
+            "audio": "mageDeflect1",
+            "visuals": [
+                "protagonist"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "quel nul tu fais ongdre, incapable de renvoyer un sort aussi simple, je comprends mieux pourquoi tu as été refusé à pouledare hahaha",
+            "clear": true,
+            "audio": "mageDeflect2",
+            "visuals": [
+                "mage"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "aie aie aie aie aie, ça doit faire mal ça mon pauvre ongdre, ne te laisse pas abattre, tu auras surement plus de chances de reussir demain, ou pas hahahahaha",
+            "clear": false,
+            "audio": "mageDeflect3",
+            "visuals": [
+                "announcer"
+            ],
+            "speed": 30
+        },
+        {
+            "trigger": "dayOneFail"
+        }
+    ],
+
+    "mageCook": [
+        {
+            "character": "ongdre",
+            "dialog": "bon ok d'accord moi j'aime bien manger alors pourquoi pas",
+            "clear": true,
+            "audio": "mageCook1",
+            "visuals": [
+                "ongdreCook",
+                "protagonist"
+            ],
+            "trigger": "stopMusic",
+            "speed": 50
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "mais enfin n'importe quoi ongdre tu t'es carrément barré, l'audience s'est endormie là !!!",
+            "clear": false,
+            "audio": "mageCook2",
+            "visuals": [
+                "announcer"
+            ],
+            "speed": 30
+        },
+        {
+            "trigger": "dayOneFail"
+        }
+    ],
+
+    "mageRap": [
+        {
+            "character": "ongdre",
+            "dialog": "ok ok balthazionx, tu veux jouer à ça ahin ahin",
+            "clear": true,
+            "audio": "mageRap1",
+            "visuals": [
+                "protagonist"
+            ],
+            "trigger": "stopMusic",
+            "speed": 50
+        },
+        {
+            "character": "ongdre",
+            "dialog": "ouais, ouais, toi t'es trop, moi jsuis super, tout le monde m'adore, et toi t'es nul, quand ongdre rappe, les audiences explose, quand balthazionx parle, tout le monde s'en moque hahah !!",
+            "audio": "mageRap2",
+            "clear": true,
+            "visuals": [
+                "ongdrerap"
+            ],
+            "speed": 50
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "olalalallaaaaa on m'indique que les audiences ont effectivements explosés !! un peu comme ce vieux balthazionxxx bien joué ongdre !!!",
+            "clear": false,
+            "audio": "mageRap3",
+            "visuals": [
+                "announcer"
+            ],
+            "trigger": "showMusic",
+            "speed": 30
+        },
+        {
+            "trigger": "dayOneSuccess"
+        }
+    ]
+}

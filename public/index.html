@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" class="theme__main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="une histoire miamo.fr - découvrez le grand ongdre dans une histoire poignante pleine de rebondissements">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:image" content="https://ongdre.miamo.fr/assets/apple-touch.png">
+    <title>ongdre</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/apple-touch.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__theater"></div>
+        <section class="main__menu">
+            <h1 class="main__menu-title">¦ ongdre ¦</h1>
+            <span class="main__menu-subtitle">a miamo.fr side story</span>
+            <input type="button" class="main__menu-start" value="nouvelle partie">
+            <input type="button" class="main__menu-load" value="charger partie">
+            <a href="https://alexsounalet.com" target="_blank" class="main__menu-credits">Designé & Développé par Alexandre Sounalet en -48h</a>
+        </section>
+        <div class="main__settings"></div>
+        <div class="main__dialog hide">
+            <span class="main__dialog-author">MiamoAlex :</span>
+            <p class="main__dialog-text">hihihi je suis un développeur</p>
+        </div>
+    </main>
+
+    <!-- attention aux telephones la team -->
+    <section class="mobileprompt">
+        <h2 class="mobileprompt__title">coucou</h2>
+        <span class="mobileprompt__text">tourne le telephone s'il te plait</span>
+    </section>
+
+    <!-- moi quand jfais des templates -->
+    <div id="templates" hidden>
+        <template class="template__choice">
+            <div class="choice hover" data-conversation="{{conversation}}" data-event="{{event}}">
+                {{dialog}}
+            </div>
+        </template>
+    </div>
+
+    <!-- développeur 😎😎😎😎😎-->
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

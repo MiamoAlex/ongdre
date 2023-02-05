@@ -1,0 +1,9 @@
+.mageRap {
+    &__ongdre,
+    &__ongdreMini,
+    &__ongdreCrown,
+    &__ongdreHat {
+        animation: zipzap infinite 300ms;
+        transform-origin: bottom;
+    }
+}

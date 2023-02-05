@@ -1,0 +1,55 @@
+@keyframes opacityscale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidebottom {
+    0%{
+        transform: translateY(40rem) rotate(30deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes slidetop {
+    0%{
+        transform: translateY(-80rem) rotate(-200deg) scaleX(-1);
+    }
+    100% {
+        transform: translateY(-25rem) rotate(-180deg) scaleX(-1);
+    }
+}
+
+@keyframes uglyzoom {
+    0%{
+        transform: scale(0) rotateY(0deg);
+    }
+    100% {
+        transform: scale(1) rotateY(720deg);
+    }
+}
+
+@keyframes zipzap {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes god {
+    0% {
+        transform: translateY(-50rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

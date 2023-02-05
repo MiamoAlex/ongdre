@@ -1,0 +1,169 @@
+{
+    "epilogueBad": [
+        {
+            "character": "Miorlax",
+            "dialog": "alalalaa mes ptits mionches... je crois bien que nous y sommes ...",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "epilogue1",
+            "speed": 50
+        },
+        {
+            "character": "Cassandra",
+            "dialog": "sacré émission ce soir franchement BIP BOUPPP à tous",
+            "clear": true,
+            "visuals": [
+                "cassandra"
+            ],
+            "audio": "epilogue2",
+            "speed": 35
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "Ce bon vieux ongdre en aura pris plein la tronche ! n'est-ce pas",
+            "clear": true,
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "epilogueBad1",
+            "speed": 35
+        },
+        {
+            "character": "ongdre",
+            "dialog": "ehhh j'en peux plus j'ai rien compris à votre emission j'etais pas venu pour ça moi",
+            "clear": true,
+            "visuals": [
+                "protagonist"
+            ],
+            "audio": "epilogueBad2",
+            "speed": 35
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "ne t'en fait pas ongdre !! tes efforts vont tout de même payer, nous avons quelqu'un à te présenter !!!",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "epilogueBad3",
+            "speed": 35
+        },
+        {
+            "character": "Dr. De Pomelos",
+            "dialog": "salut ongdre. j'ai entendu dire que tu voulais devenir chirurgien ?",
+            "clear": true,
+            "visuals": [
+                "pomelos"
+            ],
+            "audio": "epilogueBad4",
+            "speed": 35
+        },
+        {
+            "trigger": "credits"
+        }
+    ],
+    "epilogueGood": [
+        {
+            "character": "Miorlax",
+            "dialog": "alalalaa mes ptits mionches... je crois bien que nous y sommes ...",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "epilogue1",
+            "speed": 50
+        },
+        {
+            "character": "Cassandra",
+            "dialog": "sacré émission ce soir franchement BIP BOUPPP à tous",
+            "clear": true,
+            "visuals": [
+                "cassandra"
+            ],
+            "audio": "epilogue2",
+            "speed": 35
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "Ce bon vieux ongdre nous en a mis plein la vue !! il a même gagné tout plein d'argent ce soir !!",
+            "audio": "epilogueGood1",
+            "speed": 35
+        },
+        {
+            "character": "ongdre",
+            "dialog": "et du coup j'ai pas compris où est l'amour de ma vie ??",
+            "clear": true,
+            "visuals": [
+                "newyork",
+                "protagonist"
+            ],
+            "audio": "epilogueGood2",
+            "speed": 50
+        },
+        {
+            "character": "Balthazionx",
+            "dialog": "MOUAHHAHAHAHAH te revoilà ongdre, cette fois tu ne pourras rien faire contre moi !",
+            "clear": false,
+            "visuals": [
+                "mage"
+            ],
+            "audio": "epilogueGood3",
+            "speed": 55
+        },
+        {
+            "character": "églantine",
+            "dialog": "MMMHHHHHH IL EST LA ATTRAPEZ LE, NE BOUGE PLUS SALE SORCIER",
+            "visuals": [
+                "eglantine"
+            ],
+            "audio": "epilogueGood4",
+            "trigger": "stopMusic",
+            "speed": 45
+        },
+        {
+            "character": "???",
+            "dialog": "olala décidément elle vient de loin son histoire",
+            "visuals": [
+                "narrator"
+            ],
+            "audio": "epilogueGood5",
+            "speed": 60
+        },
+        {
+            "character": "enzo",
+            "visuals": [
+                "nerd"
+            ],
+            "dialog": "euhhh moi perfonellement fef euhh, ve les vé vufte fuivi hein",
+            "audio": "epilogueGood6",
+            "speed": 45
+        },
+        {
+            "character": "nimbuffle",
+            "visuals": [
+                "nimbuffle"
+            ],
+            "dialog": "yipee",
+            "audio": "epilogueGood7",
+            "speed": 130
+        },
+        {
+            "character": "églantine",
+            "dialog": "REND TOI BALTHAZIONX, L'EQUIPE DE CHOC ANTI NAZE EST ARRIVÉE",
+            "audio": "epilogueGood8",
+            "speed": 40
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "oui oui oui les ptits mionches c'est ça qu'on veut, retrouvez nous dans le prochain épisode de luli love dans 2 semaines, ciao ciaooo !!",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "epilogueGood9",
+            "trigger": "showMusic",
+            "speed": 50
+        },
+        {
+            "trigger": "credits"
+        }
+    ]
+}

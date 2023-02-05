@@ -1,0 +1,17 @@
+.introAgree {
+    &__announcer {
+        position: absolute;
+        width: 35vw;
+        right: 12%;
+        bottom: 5rem;
+    }
+
+    &__ongdre {
+        z-index: 10;
+    }
+
+    &__cassandra {
+        width: 70vw;
+        animation: opacityscale 700ms forwards;
+    }
+}

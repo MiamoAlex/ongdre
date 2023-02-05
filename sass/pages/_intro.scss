@@ -1,0 +1,21 @@
+.intro {
+    &__announcer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 30vw;
+        animation: slidebottom forwards 2s;
+    }
+    
+    &__herbertstory {
+        animation: opacityscale forwards 2s;
+        width: 70vw;
+    }
+    
+    &__restaurant {
+        animation: uglyzoom forwards 4s;
+        width: 70vw;
+    }
+}

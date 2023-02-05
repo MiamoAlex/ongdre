@@ -1,0 +1,15 @@
+.mageCook{
+    &__ongdre,
+    &__ongdreMini,
+    &__ongdreCrown,
+    &__ongdreHat {
+        position: absolute;
+        left: 33%;
+        width: 20%;
+        bottom: 3rem;
+    }
+
+    &__ongdreCook{
+        width: 70vw;
+    }
+}

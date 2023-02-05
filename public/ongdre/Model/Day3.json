@@ -1,0 +1,183 @@
+{
+    "dadAppearance": [
+        {
+            "character": "Miorlax",
+            "dialog": "chers téléspectateurs !!! voici le clou du spectacle !! donnez moi un tonnerre d'applaudissement pour le géniteur d'ongdre !!",
+            "visuals": [
+                "announcer"
+            ],
+            "clear": true,
+            "audio": "dad0",
+            "speed": 50
+        },
+        {
+            "character": "ongdre",
+            "dialog": "papa c'est toi?? olala quel cauchemar",
+            "visuals": [
+                "room",
+                "protagonist",
+                "daron"
+            ],
+            "clear": true,
+            "audio": "dad1",
+            "speed": 50
+        },
+        {
+            "character": "père",
+            "dialog": "oui ongdre c'est moi, nous nous retrouvons enfin",
+            "visuals": [
+                "angel"
+            ],
+            "clear": false,
+            "audio": "dad2",
+            "speed": 65
+        },
+        {
+            "character": "père",
+            "dialog": "comment se passent tes études, as tu été admis à pouledare ??",
+            "audio": "dad3",
+            "speed": 65
+        },
+        {
+            "character": "ongdre",
+            "dialog": "non... mais la magie n'est pas faite pour moi, je veux devenir chirurgien et sauver des vies !!",
+            "audio": "dad4",
+            "speed": 50
+        },
+        {
+            "character": "père",
+            "dialog": "chirurgien ? mais c'est super ongdre, ça tombe bien car je connais justement..",
+            "audio": "dad5",
+            "speed": 65
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "ep ep ep ep ep!!!! je crois qu'il y a erreur !! vous n'êtes pas venu pour encourager votre fils quand même ? hahaha",
+            "visuals": [
+                "announcer"
+            ],
+            "clear": true,
+            "audio": "dad6",
+            "trigger": "stopMusic",
+            "speed": 30
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "il nous faut de l'action bon sang !! mince... qu'est-ce qu'on peut faire pour empirer la situation.... ah je sais !!!",
+            "audio": "dad7",
+            "trigger": "stopMusic",
+            "speed": 25
+        },
+        {
+            "character": "monsieur bête",
+            "visuals": [
+                "monsieurbete"
+            ],
+            "clear": true,
+            "dialog": "20 ans que ongdre et son père ne sont pas vus !! et les voici dans la même pièce, regardez ses images émouvantes, cependant, ongdre ne sait pas encore que son père n'a jamais existé !! et qu'il renferme en réalité 500000$$$$",
+            "audio": "dad8",
+            "speed": 40
+        },
+        {
+            "choices": [
+                {
+                    "conversation": "dadConfront",
+                    "dialog": "je t'entends monsieur bête enfaite je suis juste à côté"
+                },
+                {
+                    "conversation": "dadOpen",
+                    "dialog": "essayer d'ouvrir mon père et récupérer 500000$$$$"
+                }
+            ]
+        }
+    ],
+    "dadConfront": [
+        {
+            "character": "ongdre",
+            "dialog": "monsieur bête c'est vous ??? mais je vous entends je suis juste là",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "dadConfront1",
+            "speed": 50
+        },
+        {
+            "character": "monsieur bête",
+            "visuals": [
+                "monsieurbete"
+            ],
+            "clear": true,
+            "dialog": "FELICITATIONSSS ONGDRE TU GAGNES LES 500000$$$, TON PERE ETAIT EN REALITÉ UNE BOMBE ARTISANALE",
+            "audio": "dadConfront2",
+            "trigger": "showMusic",
+            "speed": 45
+        },
+        {
+            "character": "ongdre",
+            "dialog": "ha ok, merci",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "dadConfront3",
+            "speed": 50
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "exceptionnel !!!!! tu vas pouvoir faire pleins de choses avec tout cet argent ongdre !",
+            "visuals": [
+                "announcer"
+            ],
+            "audio": "dadConfront4",
+            "speed": 50
+        },
+        {
+            "trigger": "dayThreeSuccess"
+        }
+    ],
+    "dadOpen": [
+        {
+            "character": "ongdre",
+            "dialog": "tiens et si j'essayais d'ouvrir mon père pour voir si il contient 50000000000$",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "dadOpen1",
+            "speed": 50,
+            "trigger": "ongdreExplosion"
+        },
+        {
+            "character": "ongdre",
+            "dialog": "*BOOM* aaaiieeee mon père était en réalité une bombe artisanaleee",
+            "visuals": [
+                "protagonist"
+            ],
+            "clear": true,
+            "audio": "dadOpen2",
+            "speed": 70
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "et oui ongdre !! on avait caché une bombe artisanale dans ce faux père !!!",
+            "visuals": [
+                "announcer"
+            ],
+            "clear": true,
+            "audio": "dadOpen3",
+            "trigger": "stopMusic",
+            "speed": 70
+        },
+        {
+            "character": "Miorlax",
+            "dialog": "effectivement tu n'as aucune famille ! celà conclut notre troisième jour ensemble, prêt pour les résultats?!!!",
+            "audio": "dadOpen4",
+            "trigger": "stopMusic",
+            "speed": 50
+        }, 
+        { 
+            "trigger": "dayThreeFail"
+        }
+    ]
+}

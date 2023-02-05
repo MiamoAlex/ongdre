@@ -1,0 +1,51 @@
+.dadAppearance {
+    &__ongdre,
+    &__ongdreMini,
+    &__ongdreCrown,
+    &__ongdreHat,
+    &__ongdreBurger {
+        position: absolute;
+        left: 10%;
+        margin: auto;
+        width: 15%;
+        bottom: 5%;
+    }
+
+    &__announcer {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        margin: auto;
+        width: 35vw;
+        animation: slidebottom forwards 2s;
+    }
+
+    &__daron {
+        position: absolute;
+        right: 10%;
+        bottom: 0%;
+        width: 20vw;
+    }
+
+    &__room {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 85vw;
+    }
+
+    &__monsieurbete {
+        width: 30vw;
+        animation: opacityscale forwards 2s;
+    }
+}
+
+.dadConfront__announcer, .dadOpen__announcer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30vw;
+    animation: slidebottom forwards 2s;
+}

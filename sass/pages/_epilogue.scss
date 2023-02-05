@@ -1,0 +1,88 @@
+.epilogueBad,
+.epilogueGood {
+    &__announcer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 30vw;
+        animation: slidebottom forwards 2s;
+    }
+
+    &__cassandra {
+        width: 70vw;
+        animation: opacityscale 700ms forwards;
+    }
+
+    &__newyork {
+        width: 80vw;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    &__mage {
+        position: absolute;
+        right: 8%;
+        margin: auto;
+        width: 22%;
+        bottom: 12%;
+        animation: zipzap forwards 1s;
+        transform-origin: bottom;
+    }
+
+    &__eglantine {
+        position: absolute;
+        left: 5%;
+        margin: auto;
+        width: 23%;
+        bottom: 6%;
+        // animation: slide 2s forwards;
+    }
+    &__narrator {
+        position: absolute;
+        left: 14%;
+        margin: auto;
+        width: 16%;
+        bottom: 33%;
+        animation: opacityscale 2s forwards;
+    }
+
+    &__pomelos {
+        animation: opacityscale 2s forwards;
+    }
+
+    &__nerd {
+        position: absolute;
+        left: 18%;
+        margin: auto;
+        width: 16%;
+        bottom: 69%;
+        animation: zipzap 2s forwards;
+    }
+
+    &__nimbuffle {
+        position: absolute;
+        top: -41px;
+        transform: rotate(-180deg);
+        left: 13rem;
+        right: 0;
+        margin: auto;
+        width: 10%;
+    }
+
+    &__ongdre,
+    &__ongdreMini,
+    &__ongdreCrown,
+    &__ongdreHat,
+    &__ongdreBurger,
+    &__ongdreExplosion {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 12%;
+        bottom: 0;
+    }
+}

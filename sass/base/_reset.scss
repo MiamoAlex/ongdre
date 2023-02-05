@@ -1,0 +1,104 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html,
+body {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-main-black);
+  color: var(--clr-main-white);
+  user-select: none;
+  font-family: 'Free Pixel';
+  cursor: url("/assets/tex/cur.png"), default;
+}
+
+input {
+  cursor: url("/assets/tex/hover.png"), default;
+}
+
+a {
+  cursor: url("/assets/tex/hover.png"), default;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+use {
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}

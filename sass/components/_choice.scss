@@ -1,0 +1,10 @@
+.choice {
+    background-color: var(--clr-main-black);
+    margin-bottom: 1rem;
+    padding: .5rem;
+    text-align: center;
+    border: solid #333;
+    &:hover {
+        filter: brightness(.5);
+    }
+}

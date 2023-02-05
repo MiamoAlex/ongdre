@@ -1,0 +1,26 @@
+.mageAppearance {
+    &__ongdre,
+    &__ongdreMini,
+    &__ongdreCrown,
+    &__ongdreHat {
+        position: absolute;
+        left: 10%;
+        width: 15%;
+        bottom: 0;
+    }
+
+    &__miamagic {
+        position: absolute;
+        width: 80vw;
+        inset: 0;
+        margin: auto;
+    }
+
+    &__mage {
+        position: absolute;
+        width: 15vw;
+        right: 10%;
+        bottom: 18%;
+        animation: zipzap forwards 1s;
+    }
+}

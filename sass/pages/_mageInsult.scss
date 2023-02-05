@@ -1,0 +1,21 @@
+.mageInsult {
+    &__announcer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 30vw;
+        animation: slidebottom forwards 2s;
+    }
+}
+
+.mageRap__announcer, .mageCook__announcer, .mageDeflect__announcer, .mageMario__announcer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30vw;
+    animation: slidebottom forwards 2s;
+}
